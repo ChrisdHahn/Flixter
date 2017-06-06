@@ -1,5 +1,5 @@
 class DeviseCreateUsers < ActiveRecord::Migration[5.0]
-  before_action :authenticate_user!
+before_action :authenticate_user!
   def change
     create_table :users do |t|
       ## Database authenticatable
