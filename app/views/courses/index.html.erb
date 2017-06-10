@@ -9,6 +9,10 @@
     <%= link_to course.title, course_path(course) %>
   </h2>
   <br />
+    <% if course.image.present? %>
+      <%= image_tag course.image, class: 'img-fluid' %>
+    <% end %>
+  <br />
   <div class="row">
       <div class="col-sm-8 col-12">
         <%= course.description %>
