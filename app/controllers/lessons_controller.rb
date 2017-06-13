@@ -17,8 +17,7 @@ before_action :require_authorized_for_current_course, only: [:show]
     end
 
     def require_authorized_for_current_course
-      if current_course.user != current_user && !
-        current_user.enrolled_in?(current_course)
+      if current_course.user != current_user && ! current_user.enrolled_in?(current_course)
           redirect_to course_path(current_course), alert: 'You can only view lessons if enrolled in course.'
       end
     end
