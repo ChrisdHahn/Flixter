@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This video streaming app is another one created under the guidance of The Firehose Project. It implements the following skills:
 
-Things you may want to cover:
+- Ruby on Rails Framework
+- Credit Card payment capabilities
+- Advanced database relationships
+- Marketplace Platform
+- Video and image uploading
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+It's available to be viewed here: [Flixter](https://flixter-chris-hahn.herokuapp.com/)
