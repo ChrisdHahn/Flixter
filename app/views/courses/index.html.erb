@@ -1,20 +1,23 @@
 <br />
-
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center">Learn something today</h1>
   <hr />
-
+</div>
+<br/>
+<div class="booyah-box col-10 offset-1">
   <% @courses.each do |course| %>
   <h2 class="text-center">
     <%= link_to course.title, course_path(course) %>
   </h2>
   <br />
+  <div class="image-size">
     <% if course.image.present? %>
       <%= image_tag course.image, class: 'img-fluid' %>
     <% end %>
+  </div>
   <br />
   <div class="row">
-      <div class="col-sm-8 col-12">
+      <div class="col-sm-8 col-12 float-left">
         <%= course.description %>
       </div>
       <div class="col-sm-4 col-12 text-center">
